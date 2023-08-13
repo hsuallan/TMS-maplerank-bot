@@ -1,0 +1,19 @@
+{
+  "name": "maplestory-tms-legion-rank",
+  "version": "1.0.0",
+  "description": "get tms legion rank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "node-fetch": "^2.6.12"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  }
+}

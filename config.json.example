@@ -1,0 +1,18 @@
+{
+	"token": "",
+	"clientId": "",
+	"guildId": "",
+	"POST_URL": "https://tw-event.beanfun.com/MapleStory/Event/E20170713/Default.aspx/GetSearchRank",
+	"JOBS":{
+		"6412": "卡蒂娜",
+		"15212": "伊利恩",
+		"15512": "亞克",
+		"332": "開拓者",
+		"16412": "虎影",
+		"15112": "阿戴爾",
+		"6312": "凱殷",
+		"17512": "墨玄",
+		"16212": "菈菈",
+		"15412": "卡莉"
+	  }
+}
