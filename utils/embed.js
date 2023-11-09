@@ -10,6 +10,9 @@ function embedBuilder(x) {
 	const exampleEmbed = {
 		color: 0x0099ff,
 		title: x.CharacterName,
+		thumbnail: {
+			url: x.Avatar_CharacterLookURL,
+		},
 		fields: [
 			{
 				name: 'Level',

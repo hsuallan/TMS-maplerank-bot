@@ -22,6 +22,7 @@ const { POST_URL } = require('../config.json');
  * @property {string} CharacterName - 角色名稱
  * @property {number} CharacterID - 角色ID
  * @property {number} AccountID - 帳號ID
+ * @property {number} Avatar_CharacterLookURL - 角色外觀網址
  * @property {number} Level - 等級
  * @property {number} Job - 職業
  * @property {number} UnionLevel - 聯盟等級
