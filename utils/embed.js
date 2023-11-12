@@ -1,15 +1,19 @@
-const { JOBS } = require('../config.json');
+const { JOBS, SERVERS } = require('../config.json');
 
-function embedBuilder(x) {
+function embedBuilder(x, serverId) {
 	const getJobName = (item) => {
 		if (!item.JobName) {
 			return JOBS[item.Job] ?? 'unknown';
 		}
 		return item.JobName;
 	};
+	const getServerName = () => {
+		return SERVERS[serverId];
+	};
 	const exampleEmbed = {
 		color: 0x0099ff,
 		title: x.CharacterName,
+		description: getServerName(),
 		thumbnail: {
 			url: x.Avatar_CharacterLookURL,
 		},
@@ -54,8 +58,7 @@ function embedBuilder(x) {
 			},
 		],
 		footer: {
-			text: `相比上周變化 等級排行 ${x.Rank_Level_Change === 'up' ? '⬆' : '⬇'
-			} 攻擊力 ${x.Rank_DPS_Change === 'up' ? '⬆' : '⬇'}`,
+			text: `相比上周變化 等級排行 ${x.Rank_Level_Change === 'up' ? '⬆' : '⬇'} 攻擊力 ${x.Rank_DPS_Change === 'up' ? '⬆' : '⬇'}`,
 		},
 	};
 	return exampleEmbed;

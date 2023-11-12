@@ -33,7 +33,7 @@ module.exports = {
 		if (typeof parsedData === 'string') {
 			return await interaction.reply(parsedData);
 		}
-		const embed = embedBuilder(parsedData);
+		const embed = embedBuilder(parsedData, serverID);
 		await interaction.reply({ embeds: [embed] });
 	},
 };
